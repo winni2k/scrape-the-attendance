@@ -12,3 +12,14 @@
 python3 parse.py data/2019-12-03_hoest-2019.htm data/2019-12-03_hoest-2019.csv
 ```
 
+## Calculating attendance
+
+Run `calculate_attendance.py`
+
+```bash
+
+# first argument: Input CSV with attendance
+# second argument: Space-separated string of dates to include in analysis
+# third argument: Output CSV 
+python3 calculate_attendance.py data/2019-12-03_hoest-2019.csv '28/10 04/11 11/11 18/11 25/11 02/12 09/12' data/2019-12-03_hoest-2019-attendance.csv
+```
