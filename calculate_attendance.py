@@ -11,6 +11,7 @@ def main(input_csv, dates_of_interest, output):
         .replace('N', 0) \
         .replace('JS', 0.8) \
         .replace('%', 0.5) \
+        .replace('?', 0) \
         .replace('NO', 0)
     print(f'Number of rehearsals: {len(dates.columns)}')
     att_sums = pd.concat([dat.iloc[:, 0:2], dates.sum(axis=1)], axis=1)
